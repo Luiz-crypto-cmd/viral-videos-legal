@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Privacy Policy — viral-videos</title>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Privacy Policy — ViralVideos</title>
 <style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:720px;margin:0 auto;padding:40px 20px;color:#1a1a1a;line-height:1.6}h2{margin-top:2em;border-bottom:1px solid #eee;padding-bottom:0.3em}</style>
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: 2026-05-18</strong></p>
-<p>This Privacy Policy describes how <strong>viral-videos</strong> ("the App", "we", "us", or "our") collects, uses, and discloses information when you use our automated content publishing service.</p>
+<p><strong>Last updated: 2026-05-19</strong></p>
+<p>This Privacy Policy describes how <strong>ViralVideos</strong> ("the Platform", "we", "us", or "our") collects, uses, and discloses information when creators and users ("you", "your") interact with our automated content publishing platform. ViralVideos is a public-facing service available to any TikTok creator.</p>
 
-<h2>1. About viral-videos</h2>
-<p>viral-videos is an automated content generation and publishing application that creates daily AI-generated horoscope videos and publishes them to social media platforms including TikTok and YouTube Shorts. viral-videos uses the TikTok Content Posting API and Login Kit to publish content to authorized TikTok accounts.</p>
+<h2>1. About ViralVideos</h2>
+<p>ViralVideos is a public content automation platform that enables TikTok creators to generate and publish daily AI-powered horoscope videos. Our platform integrates with TikTok through the official Content Posting API and Login Kit to publish content to authorized creator accounts. ViralVideos is available to any TikTok user who wishes to connect their account — it is not a private or internal tool.</p>
 
 <h2>2. Information We Collect</h2>
-<p><strong>viral-videos does NOT collect, store, or process any personal data from end users or viewers.</strong> The application operates as a server-side automation system and does not:</p>
+<p><strong>ViralVideos does NOT collect, store, or process personal data from end users or video viewers.</strong> The Platform operates as a server-side automation service. For content creators who connect their TikTok accounts, we process the following data exclusively for the purpose of providing our service:</p>
 <ul>
-<li>Collect names, email addresses, phone numbers, or physical addresses of users</li>
-<li>Track browsing behavior or viewing patterns</li>
+<li><strong>TikTok Profile Information:</strong> When you authenticate via TikTok Login Kit, we receive your basic profile information (open ID, avatar, display name) through the <code>user.info.basic</code> scope. This data is used solely to authenticate API requests and display your profile within the Platform interface. It is not stored persistently.</li>
+<li><strong>Video Content:</strong> AI-generated videos are uploaded to your TikTok account through the Content Posting API (<code>video.publish</code> and <code>video.upload</code> scopes). These videos are created programmatically and do not contain personal information.</li>
+</ul>
+<p>The Platform <strong>does not</strong>:</p>
+<ul>
+<li>Collect names, email addresses, phone numbers, or physical addresses</li>
+<li>Track browsing behavior or viewing patterns of any user</li>
 <li>Use analytics, advertising, or tracking pixels</li>
-<li>Store or log IP addresses of viewers</li>
+<li>Store or log IP addresses</li>
 <li>Collect device information or location data</li>
 <li>Use cookies or similar tracking technologies</li>
+<li>Access your TikTok messages, followers list, or viewing history</li>
 </ul>
 
-<h2>3. TikTok API Data</h2>
-<p>viral-videos integrates with TikTok through the following official APIs:</p>
+<h2>3. TikTok API Data Usage</h2>
+<p>ViralVideos integrates with TikTok through the following official APIs, available to all approved TikTok Developer applications:</p>
 <ul>
-<li><strong>TikTok Login Kit:</strong> Used to authenticate and authorize the App to publish content on behalf of TikTok users. viral-videos requests the <code>user.info.basic</code> scope to read basic profile information (open ID, avatar, display name) solely for API authentication purposes. This data is used in-memory during the publishing process and is never stored, logged, or shared.</li>
-<li><strong>TikTok Content Posting API:</strong> Used to publish AI-generated video content to authorized TikTok accounts. viral-videos requests the <code>video.publish</code> and <code>video.upload</code> scopes to upload and publish content. Video content is created programmatically and does not contain personal information.</li>
+<li><strong>TikTok Login Kit:</strong> Enables creators to authenticate and authorize the Platform to publish content on their behalf. We request <code>user.info.basic</code> scope (open ID, avatar, display name) and <code>video.publish</code> / <code>video.upload</code> scopes. All permissions are explicitly granted by the creator and can be revoked at any time.</li>
+<li><strong>TikTok Content Posting API:</strong> Used to publish AI-generated video content to authorized creator accounts. Videos are created programmatically by our automated pipeline and do not contain user personal information.</li>
 </ul>
-<p>All TikTok API usage is governed by TikTok's Privacy Policy and Developer Terms. Users can revoke viral-videos' access at any time through their TikTok account settings under "Security and permissions" → "Apps and sessions".</p>
+<p>All TikTok API usage complies with TikTok's Developer Terms, Privacy Policy, and API Terms of Service. Creators can revoke ViralVideos' access at any time through their TikTok account settings under "Security and permissions" → "Apps and sessions".</p>
 
 <h2>4. Third-Party Services</h2>
-<p>viral-videos uses the following third-party APIs for content generation. These services process data as part of the content creation pipeline:</p>
+<p>ViralVideos uses the following third-party APIs as part of our content generation pipeline. No personal data is shared with these services:</p>
 <ul>
-<li><strong>TikTok Content Posting API</strong> — for video publishing. Subject to TikTok's Privacy Policy.</li>
-<li><strong>YouTube Data API v3</strong> — for video publishing. Subject to Google's Privacy Policy.</li>
+<li><strong>TikTok Content Posting API</strong> — for video publishing to creator accounts. Subject to TikTok's Privacy Policy.</li>
+<li><strong>YouTube Data API v3</strong> — for video publishing to creator accounts. Subject to Google's Privacy Policy.</li>
 <li><strong>Together AI API</strong> — for AI text generation (Llama 3.3 70B model). No personal data sent.</li>
 <li><strong>Pollinations.ai</strong> — for AI image and video generation. No personal data sent.</li>
 <li><strong>ohmanda.com Horoscope API</strong> — for astrological data. No personal data sent.</li>
@@ -42,27 +48,37 @@
 </ul>
 
 <h2>5. Data Retention and Deletion</h2>
-<p>viral-videos does not retain user data. Generated video files and temporary assets (audio, subtitles, clips) are automatically deleted after publishing to the target platforms. No user databases or persistent logs containing personal information are maintained.</p>
+<p>ViralVideos does not retain creator personal data. Generated video files and temporary assets (audio, subtitles, clips) are automatically deleted from our servers after successful publishing to the target platforms. No user databases or persistent logs containing personal information are maintained. Any profile data received via TikTok Login Kit is held in memory only during the active publishing session and discarded immediately after.</p>
 
 <h2>6. Data Sharing</h2>
-<p>viral-videos does not sell, rent, or share any data with third parties. The App does not display advertisements, use ad networks, or participate in data brokerage of any kind.</p>
+<p>ViralVideos does not sell, rent, or share any data with third parties. The Platform does not display advertisements, use ad networks, or participate in data brokerage of any kind. We do not share creator information between different creator accounts on the Platform.</p>
 
 <h2>7. Children's Privacy</h2>
-<p>viral-videos does not target children under the age of 13 (or the applicable age of digital consent in the user's jurisdiction). All content published by viral-videos on TikTok and YouTube is appropriately marked as not directed to children. The App does not knowingly collect personal information from children.</p>
+<p>ViralVideos is not directed to children under the age of 13 (or the applicable age of digital consent in the user's jurisdiction). All content published through our Platform on TikTok and YouTube is appropriately marked as not directed to children. The Platform does not knowingly collect personal information from children under 13.</p>
 
 <h2>8. Security</h2>
-<p>viral-videos operates on a self-hosted server with encrypted API communications (HTTPS/TLS). API credentials are stored as environment variables and never exposed in source code or logs. Video content is transferred to platforms via their official secure APIs.</p>
+<p>ViralVideos operates on secure server infrastructure with encrypted API communications (HTTPS/TLS). API credentials are stored as environment variables with restricted access. Video content is transferred to platforms via their official secure APIs. We implement industry-standard security practices to protect the limited data we process.</p>
 
 <h2>9. International Data Transfers</h2>
-<p>viral-videos' server infrastructure may be located outside the user's country of residence. All data processing follows applicable data protection regulations. Since no personal data is collected or stored, cross-border data transfer concerns are minimal.</p>
+<p>ViralVideos' server infrastructure may be located outside the creator's country of residence. All data processing follows applicable data protection regulations. Since no personal data is persistently collected or stored, cross-border data transfer concerns are minimal.</p>
 
-<h2>10. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Continued use of viral-videos after changes constitutes acceptance of the updated policy.</p>
-
-<h2>11. Contact</h2>
-<p>For privacy-related inquiries regarding viral-videos, including data access or deletion requests, please contact us at:</p>
+<h2>10. Your Rights and Choices</h2>
+<p>As a creator using ViralVideos, you have the right to:</p>
 <ul>
-<li>GitHub: <a href="https://github.com/luiz-crypto-cmd/viral-videos-legal">github.com/luiz-crypto-cmd/viral-videos-legal</a> (open an issue)</li>
+<li>Revoke Platform access to your TikTok account at any time via TikTok settings</li>
+<li>Request information about any data associated with your account</li>
+<li>Request deletion of any stored data (though we store none persistently)</li>
+<li>Discontinue use of the Platform at any time</li>
 </ul>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. Changes will be posted on this page with an updated "Last updated" date. Continued use of ViralVideos after changes constitutes acceptance of the updated policy.</p>
+
+<h2>12. Contact</h2>
+<p>For privacy-related inquiries regarding ViralVideos, including data access or deletion requests, please contact us at:</p>
+<ul>
+<li>GitHub: <a href="https://github.com/Luiz-crypto-cmd/viral-videos-legal">github.com/Luiz-crypto-cmd/viral-videos-legal</a> (open an issue)</li>
+</ul>
+<p>We aim to respond to all privacy inquiries within 30 days.</p>
 </body>
 </html>
