@@ -58,7 +58,7 @@
         // TikTok OAuth 2.0 PKCE flow
         const CLIENT_KEY = 'aw5yopoe4llrhp50'; // TikTok app client_key
         const REDIRECT_URI = encodeURIComponent(window.location.origin + window.location.pathname.replace('login.html', '') + 'callback');
-        const SCOPE = 'user.info.basic,video.publish,video.upload';
+        const SCOPE = 'user.info.basic';
 
         function generateState() {
             return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
