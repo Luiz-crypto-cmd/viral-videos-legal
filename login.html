@@ -56,18 +56,15 @@
 
     <script>
         // TikTok OAuth 2.0 PKCE flow
-        const CLIENT_KEY = 'aw5yopoe4llrhp50'; // TikTok app client_key
-        const REDIRECT_URI = encodeURIComponent(window.location.origin + window.location.pathname.replace('login.html', '') + 'callback');
-        const SCOPE = 'user.info.basic';
-
-        function generateState() {
-            return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-        }
-
         function startLogin() {
-            const state = generateState();
+            const state = Math.random().toString(36).substring(2, 15);
             sessionStorage.setItem('tiktok_state', state);
-            const authUrl = `https://www.tiktok.com/v2/auth/authorize/?client_key=${CLIENT_KEY}&response_type=code&scope=${encodeURIComponent(SCOPE)}&redirect_uri=${REDIRECT_URI}&state=${state}`;
+            const authUrl = 'https://www.tiktok.com/v2/auth/authorize/'
+                + '?client_key=aw5yopoe4llrhp50'
+                + '&response_type=code'
+                + '&scope=user.info.basic'
+                + '&redirect_uri=https%3A%2F%2Fluiz-crypto-cmd.github.io%2Fviral-videos-legal%2Fcallback'
+                + '&state=' + state;
             window.location.href = authUrl;
             return false;
         }
